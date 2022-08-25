@@ -1,0 +1,304 @@
+:root {
+  --logo-main-color: #000000;
+  --accent-color: #2196f3;
+  --button-active: #188CE8
+  --main-text-color: #212121;
+  --secondary-text-color: #757575;
+  --address-color: rgba(255, 255, 255, 0.6);
+  --main-header-color: #ffffff;
+  --background-dark-color: #2f303a;
+  --team-background: #F5F4FA
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+/* main */
+
+.header {
+  border-bottom: 1px solid #ECECEC;;
+  
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0,03em;
+  color: var(--logo-main-color);
+}
+.logo span {
+  color: var(--accent-color);
+}
+.nav-list {
+  display: flex;
+  gap: 50px;
+}
+
+li {
+  list-style: none;
+}
+.header-list {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.header-item {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+a{
+  text-decoration: none;
+  
+}
+.header-link {
+  color: var(--main-text-color);
+  display: inline-block;
+  padding: 32px 0;
+}
+.header-link:hover,
+.header-link:focus,
+.footer-header:hover,
+.footer-header:focus,
+.footer-text:hover,
+.footer-text:focus{
+  color: var(--accent-color);
+}
+.current-page {
+  color: var(--accent-color);
+}
+
+.main-section {
+  background-color: var(--background-dark-color);
+  padding: 200px 0;
+
+}
+.main-header {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-header-color);
+  width: 700px;
+  margin: 0 auto 40px auto;
+}
+.button {
+  height: 38px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  border: none;
+  background:var(--team-background) ;
+  border-radius: 4px;
+}
+
+.button:hover ,
+.button:focus{
+  background: #2196F3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.accent-button {
+  display: block;
+  color: var(--main-header-color);
+  background: var(--accent-color);
+  width: 216px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  display: block;
+  margin: 0 auto;
+  border: none;
+  cursor: pointer;
+
+}
+.accent-button:hover ,
+.accent-button:focus{
+  background: var(--button-active);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section-list {
+  display: flex;
+  gap: 30px;
+}
+.section-item {
+  width: 270px;
+}
+.section-image,
+.card-image{
+  width: inherit;
+  margin-bottom: 30px;
+}
+
+.image-box{
+  align-items: center;
+  justify-content: center;
+}
+.item-header,
+.card-header {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.item-text,
+.card-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+.section-header {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  margin-bottom: 50px;
+}
+
+.item-box{
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+}
+.team-section{
+  background: #F5F4FA;
+}
+.footer {
+  background-color: var(--background-dark-color);
+}
+
+.footer-header {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  color: var(--main-header-color);
+}
+.footer-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+/* portfolio */
+
+.button-list {
+  display: flex;
+  justify-content: center;
+}
+.button-item {
+  margin: 8px;
+  padding-bottom: 16px;
+}
+.card-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card-item {
+  margin: 30px;
+  background: var(--main-header-color);
+  border: 1px solid #eeeeee;
+}
+.card-header{ 
+  color: #212121;
+}
+.card-text,
+.card-header {
+padding-left: 24px;
+}
+
+.header-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo-header{
+  margin-right: 94px;
+}
+.header-contact{
+  color: var(--secondary-text-color);
+}
+.logo-footer {
+  color: var(--main-header-color);
+  
+}
+.footer-box{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.address{
+  padding-top: 20px;
+}
+.footer-item:not(last-child){
+  padding-bottom: 9px;
+}
